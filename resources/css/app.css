@@ -1,11 +1,61 @@
-@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@layer base {
+    :root {
+        --royal-blue: #0a1628;
+        --royal-blue-light: #1e3a5f;
+        --royal-blue-accent: #2563eb;
+        --warm-gold: #d4af37;
+        --warm-gold-light: #f0d878;
+        --cream: #faf8f5;
+        --cream-dark: #f5f0e8;
+    }
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+@layer utilities {
+    .text-royal-blue {
+        color: var(--royal-blue);
+    }
+    
+    .bg-royal-blue {
+        background-color: var(--royal-blue);
+    }
+    
+    .text-warm-gold {
+        color: var(--warm-gold);
+    }
+    
+    .bg-warm-gold {
+        background-color: var(--warm-gold);
+    }
+}
+
+[x-cloak] {
+    display: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--royal-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--warm-gold);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--warm-gold-light);
+}
+
+/* Selection */
+::selection {
+    background: rgba(212, 175, 55, 0.3);
+    color: white;
 }
