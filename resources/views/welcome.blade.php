@@ -454,21 +454,21 @@
                                 <div class="flex items-center gap-3">
                                     <div class="h-12 w-12 rounded-2xl bg-gradient-primary text-white grid place-items-center font-bold">SF</div>
                                     <div>
-                                        <p class="font-semibold">Senior Frontend Engineer</p>
-                                        <p class="text-xs text-gray-500 flex items-center gap-1"><i class="fas fa-building h-3 w-3"></i>Northwind · Remote</p>
+                                        <p class="font-semibold">Master Electrician</p>
+                                        <p class="text-xs text-gray-500 flex items-center gap-1"><i class="fas fa-building h-3 w-3"></i>Elco Electric · Local</p>
                                     </div>
                                 </div>
                                 <span class="text-xs font-semibold rounded-full px-2.5 py-1 bg-blue-100 text-blue-600">98% match</span>
                             </div>
                             <div class="mt-5 grid grid-cols-3 gap-2">
-                                <span class="text-center text-xs font-medium rounded-lg bg-gray-100 py-2">React</span>
-                                <span class="text-center text-xs font-medium rounded-lg bg-gray-100 py-2">TypeScript</span>
-                                <span class="text-center text-xs font-medium rounded-lg bg-gray-100 py-2">Node</span>
+                                <span class="text-center text-xs font-medium rounded-lg bg-gray-100 py-2">Electrical</span>
+                                <span class="text-center text-xs font-medium rounded-lg bg-gray-100 py-2">Licensed</span>
+                                <span class="text-center text-xs font-medium rounded-lg bg-gray-100 py-2">Commercial</span>
                             </div>
                             <div class="mt-5 flex items-center justify-between">
                                 <div>
                                     <p class="text-xs text-gray-500">Salary range</p>
-                                    <p class="font-bold text-lg text-gradient">$120k – $160k</p>
+                                    <p class="font-bold text-lg text-gradient">$75k – $110k</p>
                                 </div>
                                 <a href="/register" class="btn-primary !py-2 !px-4 text-sm">Apply</a>
                             </div>
@@ -552,7 +552,7 @@
                     </div>
                     <div class="mt-5 flex flex-wrap items-center gap-2">
                         <span class="text-xs text-gray-500 mr-1">Popular:</span>
-                        @foreach(['Frontend Engineer','Product Designer','Data Scientist','Marketing Lead','DevOps','Remote'] as $p)
+                        @foreach(['Electrician','Plumber','HVAC Tech','Carpenter','Welder','Local'] as $p)
                             <button class="text-xs font-medium rounded-full px-3 py-1.5 bg-gray-100/70 hover:bg-blue-600 hover:text-white transition-colors">{{ $p }}</button>
                         @endforeach
                     </div>
@@ -574,10 +574,10 @@
             <div class="mt-12 grid gap-5 md:grid-cols-2">
                 @php
                     $jobs = [
-                        ['logo'=>'NW','company'=>'Northwind','role'=>'Senior Frontend Engineer','loc'=>'Remote · EU','type'=>'Full‑time','salary'=>'$120k–$160k','tags'=>['React','TypeScript','Remote'],'match'=>98,'color'=>'from-blue-500 to-cyan-500'],
-                        ['logo'=>'AC','company'=>'Acme Labs','role'=>'Product Designer','loc'=>'Berlin, DE','type'=>'Hybrid','salary'=>'€70k–€95k','tags'=>['Figma','Design Systems'],'match'=>94,'color'=>'from-indigo-500 to-blue-500'],
-                        ['logo'=>'OR','company'=>'Orbital','role'=>'Data Scientist','loc'=>'Remote · Worldwide','type'=>'Contract','salary'=>'$90k–$130k','tags'=>['Python','ML','SQL'],'match'=>91,'color'=>'from-sky-500 to-cyan-400'],
-                        ['logo'=>'LM','company'=>'Lumen','role'=>'DevOps Engineer','loc'=>'London, UK','type'=>'Full‑time','salary'=>'£75k–£110k','tags'=>['AWS','Kubernetes'],'match'=>89,'color'=>'from-cyan-500 to-blue-600'],
+                        ['logo'=>'EE','company'=>'Elco Electric','role'=>'Master Electrician','loc'=>'Chicago, IL','type'=>'Full‑time','salary'=>'$75k–$110k','tags'=>['Electrical','Licensed','Commercial'],'match'=>98,'color'=>'from-blue-500 to-cyan-500'],
+                        ['logo'=>'FP','company'=>'FlowRight Plumbing','role'=>'Licensed Plumber','loc'=>'Austin, TX','type'=>'Full‑time','salary'=>'$65k–$95k','tags'=>['Pipefitting','Residential','Licensed'],'match'=>94,'color'=>'from-indigo-500 to-blue-500'],
+                        ['logo'=>'CH','company'=>'ClimatePro HVAC','role'=>'HVAC Technician','loc'=>'Phoenix, AZ','type'=>'Contract','salary'=>'$60k–$85k','tags'=>['EPA Certified','Ductwork','Commercial'],'match'=>91,'color'=>'from-sky-500 to-cyan-400'],
+                        ['logo'=>'BW','company'=>'BuildWell Carpentry','role'=>'Lead Carpenter','loc'=>'Portland, OR','type'=>'Full‑time','salary'=>'$55k–$80k','tags'=>['Framing','Finish Work','Blueprint Reading'],'match'=>89,'color'=>'from-cyan-500 to-blue-600'],
                     ];
                 @endphp
                 @foreach($jobs as $i => $j)
@@ -683,9 +683,9 @@
             <div class="mt-12 grid gap-6 md:grid-cols-3">
                 @php
                     $testimonials = [
-                        ['name'=>'Amelia Carter','role'=>'Product Designer at Stripe','quote'=>'I had three offers within two weeks. The matches were genuinely aligned with my goals — not just my keywords.','avatar'=>'from-sky-300 to-blue-500'],
-                        ['name'=>'Daniel Okafor','role'=>'Senior Engineer at Vercel','quote'=>'Finally a job platform that respects your time. No recruiter spam, just clear, well‑paid roles.','avatar'=>'from-cyan-300 to-blue-600'],
-                        ['name'=>'Sophie Laurent','role'=>'Head of Talent, Lumen','quote'=>'We hired four engineers in a single quarter. The candidate quality is consistently exceptional.','avatar'=>'from-indigo-400 to-sky-500'],
+                        ['name'=>'Amelia Carter','role'=>'Master Electrician at Elco Electric','quote'=>'I had three offers within two weeks. The matches were genuinely aligned with my goals — not just my keywords.','avatar'=>'from-sky-300 to-blue-500'],
+                        ['name'=>'Daniel Okafor','role'=>'Plumbing Lead at FlowRight','quote'=>'Finally a job platform that respects your time. No recruiter spam, just clear, well‑paid roles.','avatar'=>'from-cyan-300 to-blue-600'],
+                        ['name'=>'Sophie Laurent','role'=>'HVAC Manager at ClimatePro','quote'=>'We hired four techs in a single quarter. The candidate quality is consistently exceptional.','avatar'=>'from-indigo-400 to-sky-500'],
                     ];
                 @endphp
                 @foreach($testimonials as $i => $t)
@@ -705,7 +705,7 @@
             <div class="mt-14 reveal">
                 <p class="text-center text-xs uppercase tracking-widest text-gray-500 font-semibold">Talent already hired at</p>
                 <div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-70">
-                    @foreach(['Northwind','Acme','Orbital','Lumen','Helix','Vertex'] as $logo)
+                    @foreach(['Elco Electric','FlowRight','ClimatePro','BuildWell','Apex Welding','Summit Craft'] as $logo)
                         <span class="text-lg font-extrabold tracking-tight text-gray-500">{{ $logo }}</span>
                     @endforeach
                 </div>

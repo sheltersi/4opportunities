@@ -63,7 +63,7 @@
                                     <div class="relative">
                                         <input type="text" name="headline" id="headline" required
                                             class="block w-full px-4 py-3.5 border-2 border-gray-200 rounded-2xl focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 transition-all duration-200 bg-gray-50/50 hover:bg-white"
-                                            placeholder="e.g., Senior Software Engineer | Full Stack Developer">
+                                            placeholder="e.g., Licensed Electrician | Master Plumber | HVAC Tech">
                                         <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                                             <i class="fas fa-briefcase text-gray-400 w-5 h-5"></i>
                                         </div>
